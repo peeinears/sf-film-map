@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
 
 // load data and add markers
 map.on('load', function () {
-  map.addSource('locations', { type: 'geojson', data: '/data.geojson' });
+  map.addSource('locations', { type: 'geojson', data: 'data.geojson' });
   map.addLayer({
     "id": "points",
     "type": "symbol",
